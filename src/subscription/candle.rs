@@ -22,3 +22,14 @@ pub struct Candle {
     pub volume: f64,
     pub trade_count: u64,
 }
+
+/// Adapted to fit Tiingo API for equities.
+#[derive(Copy, Clone, PartialEq, PartialOrd, Debug, Deserialize, Serialize)]
+pub struct EquityCandle {
+    pub date: DateTime<Utc>,
+    pub open: f64,
+    pub high: f64,
+    pub low: f64,
+    pub close: f64,
+    pub volume: f64,
+}
