@@ -2,7 +2,7 @@ use crate::{
     error::DataError,
     subscription::{
         book::{OrderBook, OrderBookL1},
-        candle::Candle, EquityCandle,
+        candle::{Candle, EquityCandle},
         liquidation::Liquidation,
         trade::PublicTrade,
     },
