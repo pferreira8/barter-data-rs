@@ -2,7 +2,7 @@ use crate::{
     error::DataError,
     subscription::{
         book::{OrderBook, OrderBookL1},
-        candle::Candle,
+        candle::Candle, EquityCandle,
         liquidation::Liquidation,
         trade::PublicTrade,
     },
@@ -59,6 +59,7 @@ pub enum DataKind {
     OrderBookL1(OrderBookL1),
     OrderBook(OrderBook),
     Candle(Candle),
+    EquityCandle(EquityCandle),
     Liquidation(Liquidation),
 }
 
