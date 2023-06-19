@@ -31,5 +31,5 @@ pub struct EquityCandle {
     pub high: f64,
     pub low: f64,
     pub close: f64,
-    pub volume: f64,
+    pub volume: Option<f64>,
 }
